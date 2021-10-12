@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_other_layout"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/chat_other_message_background"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="80dp" >
+
+        <TextView
+            android:id="@+id/sender_name"
+            android:layout_width="match_parent"
+            android:text="Rohit"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/sender_message"
+            android:layout_width="match_parent"
+            android:layout_below="@id/sender_name"
+            android:text="This is my message"
+            android:layout_marginStart="20sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_my_layout"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/chat_my_message_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="80dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/my_message"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:text="This is message typed me"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#F6F5F5"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+
+
+
+        <ImageView
+            android:id="@+id/ivDP"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/tvParticipantName"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textColor="@color/black"
+            android:layout_marginLeft="80dp"
+            android:textSize="16dp"
+            android:layout_marginTop="7dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

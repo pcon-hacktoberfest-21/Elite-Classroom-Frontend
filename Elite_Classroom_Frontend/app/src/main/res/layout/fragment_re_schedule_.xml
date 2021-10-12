@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Schedule_Class_Fragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:id="@+id/class_link_layout"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:ignore="MissingClass">
+
+        <androidx.appcompat.widget.AppCompatEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/class_link"
+            android:autoLink="web|email"
+            android:hint="Class Link"
+            android:textColorHint="#7A8089" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/class_link_layout"
+        android:id="@+id/lecture_desciption_layout"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:ignore="MissingClass">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/class_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Class Description"
+            android:textColorHint="#7A8089" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/select_time_date"
+        android:layout_below="@+id/lecture_desciption_layout"
+        android:layout_height="50dp">
+
+
+
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:text="Select Date"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="#EFEDED"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/select_time"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:text="Select Time"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="#EFEDED"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/schedule_button"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/select_time_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:text="Schedule"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/reschedule_button"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/select_time_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:text="ReSchedule"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <ImageView
+        android:id="@+id/delete_class"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp">
+
+    </ImageView>
+
+
+
+</RelativeLayout>

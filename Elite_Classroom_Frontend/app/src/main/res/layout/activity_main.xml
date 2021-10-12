@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#D0FFFFFF"
+    tools:openDrawer="start"
+    android:id="@+id/drawer_layout"
+    tools:context=".Activities.MainActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="@color/white">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+
+
+         <TextView
+             android:id="@+id/name"
+             android:layout_width="match_parent"
+             android:layout_marginEnd="50dp"
+             android:gravity="start|center_vertical"
+             android:layout_height="match_parent"
+             android:text="Elite Classroom"
+             android:fontFamily="@font/rubic_light"
+             android:letterSpacing="0.08"
+             android:textStyle="bold"
+             android:textSize="22sp"
+             android:textColor="@color/black"
+             android:layout_marginRight="50dp" />
+
+
+          <TextView
+              android:layout_width="25dp"
+              android:id="@+id/test"
+              android:background="@drawable/menu_placeholder"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:layout_marginEnd="20dp"
+              android:layout_height="25dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="20dp">
+
+          </TextView>
+
+
+
+
+         </RelativeLayout>
+      </androidx.appcompat.widget.Toolbar>
+
+      <View
+          android:id="@+id/line_divider_main"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#D3D1D1"/>
+      <FrameLayout
+          android:id="@+id/frame_container"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+   </LinearLayout>
+
+   <com.google.android.material.navigation.NavigationView
+       android:id="@+id/nav_view"
+       android:layout_width="wrap_content"
+       app:itemIconTint="@color/drawable_item"
+       app:itemTextColor="@color/drawable_item"
+       android:layout_height="match_parent"
+       android:layout_gravity="start"
+       app:itemBackground="@drawable/drawer_selected_item"
+       app:headerLayout="@layout/nav_header"
+       app:menu="@menu/drawer_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Assignment_Submission_Activity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:id="@+id/back_button"
+                android:layout_width="25dp"
+                android:layout_marginEnd="50dp"
+                android:layout_centerVertical="true"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back_arrow"
+                android:fontFamily="@font/rubic_light"
+                android:letterSpacing="0.08"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="50dp" />
+
+
+            <TextView
+                android:layout_width="25dp"
+                android:id="@+id/test"
+                android:background="@drawable/indicator"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp">
+
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:background="#D3D1D1"/>-->
+
+    <RelativeLayout
+        android:id="@+id/frame_container_3"
+        android:layout_marginTop="53dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

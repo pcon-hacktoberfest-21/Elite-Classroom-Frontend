@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/assignment_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/due_date"
+            android:layout_width="wrap_content"
+            android:text="Due Feb 26 , 1:59 PM"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/title"
+            android:text="Assignment Title"
+            android:textColor="@color/blue_colour"
+            android:layout_below="@+id/due_date"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:text="100 points"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+
+        <View
+            android:id="@+id/line_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/points"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/blue_colour"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/line_divider"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            android:text="This is the description of the Assignment"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/description"
+            android:text="Attachments "
+            android:visibility="gone"
+            android:id="@+id/attachments"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+
+        <RelativeLayout
+            android:id="@+id/attachement_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_below="@id/attachments"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/attachement_background">
+
+            <ImageView
+                android:id="@+id/file_symbol"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="20dp"></ImageView>
+
+            <TextView
+                android:id="@+id/file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginEnd="20dp"
+                android:maxLines="1"
+                android:layout_marginRight="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

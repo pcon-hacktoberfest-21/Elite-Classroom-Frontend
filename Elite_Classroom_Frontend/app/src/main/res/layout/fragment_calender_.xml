@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Calender_Fragment">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:id="@+id/first_week_text"
+      android:text="This week"
+      android:textColor="@color/black"
+      android:layout_marginStart="10dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp">
+
+  </TextView>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/current_next_week"
+      android:layout_width="match_parent"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginEnd="10dp"
+      android:layout_height="wrap_content">
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+
+
+  <TextView
+      android:id="@+id/next_week"
+      android:layout_below="@+id/current_next_week"
+      android:text="Next_Week"
+      android:textColor="@color/black"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="30dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp">
+
+  </TextView>
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/current_next_week_second"
+          android:layout_below="@id/next_week"
+          android:layout_width="match_parent"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="30dp"
+          android:paddingBottom="50dp"
+          android:layout_marginEnd="10dp"
+          android:layout_height="wrap_content">
+
+      </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_class_fixture_btn"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#2196F3"
+        app:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:elevation="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:tint="#FFF"
+
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+
+        android:src="@drawable/ic_add"
+        android:layout_alignParentRight="true" />
+
+
+
+</RelativeLayout>

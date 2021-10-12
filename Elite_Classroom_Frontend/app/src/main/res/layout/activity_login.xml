@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/green"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+
+
+
+    <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/realGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="GET STARTED"
+        android:textColor="@color/green"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"></TextView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elite Classroom"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:textColor="#FFF"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:text="Elite Classrooms helps classes communicate, save time and stay organized"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:text="By joining you agree to share contact information with people in your class. Learn More"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/progress_layout"
+        android:visibility="gone"
+        android:background="#BE0E0E0E"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:id="@+id/progress_bar"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/white"
+            android:layout_height="40dp">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

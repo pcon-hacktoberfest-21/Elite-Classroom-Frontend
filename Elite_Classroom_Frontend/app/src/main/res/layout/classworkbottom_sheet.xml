@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Create"
+        android:textSize="22sp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/assignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Assignment"
+        android:textSize="18sp"
+        android:textColor="#515151"
+        android:gravity="left"
+        android:drawableLeft="@drawable/ic_assignment"
+        android:drawablePadding="15dp"/>
+
+    <TextView
+        android:id="@+id/material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Material"
+        android:textSize="18sp"
+        android:textColor="#515151"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_note"
+        android:drawablePadding="15dp"/>
+
+    <TextView
+        android:id="@+id/announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Announcement"
+        android:textSize="18sp"
+        android:textColor="#515151"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_announcement"
+        android:drawablePadding="15dp"/>
+
+
+    </LinearLayout>

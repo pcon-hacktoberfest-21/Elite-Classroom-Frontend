@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="15dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="You're currently signed in as"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toEndOf="@id/profile_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#292727"
+            android:text="Rohit Agrawal"/>
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toEndOf="@id/profile_photo"
+            app:layout_constraintTop_toBottomOf="@id/profile_name"
+            android:textColor="#494747"
+            android:text="rohitgolpuria2001@gmail.com"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#959494"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask your teacher for the class code, then enter it here."
+        android:textSize="18sp"
+        android:textColor="#434343"
+        android:layout_marginTop="10dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingClass">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/class_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Class Code"
+            android:textColorHint="#7A8089" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="To sign in with a class code"
+        android:textSize="18sp"
+        android:textColor="#323131"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Use an authorized account"
+        android:textSize="16sp"
+        android:textColor="#2C2C2C"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Use a class code, with 6-7 letters and numbers, and no space or symbols"
+        android:textSize="16sp"
+        android:textColor="#2C2C2C"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you are having trouble joining the class, go to the Help Center article"
+        android:textSize="16sp"
+        android:textColor="#2C2C2C"/>
+    <Button
+        android:id="@+id/join_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOIN"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+</LinearLayout>

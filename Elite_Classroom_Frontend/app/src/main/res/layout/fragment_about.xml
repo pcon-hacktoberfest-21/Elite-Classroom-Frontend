@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.AboutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:textSize="15dp"
+        android:text="Elite Classroom is a free service for schools, non-profits and anyone with a personal Google Account. Elite makes it easy for learners and instructors to connect – inside and outside of schools. Elite saves time and paper and makes it easy to create classes, distribute assignments, communicate and stay organised.
+        \n\n\n\nThe benefits of using Elite Classroom :
+\n\n • Easy to set up – teachers can add students directly or share a code with their class to join. It takes just minutes to set up.
+\n\n • Saves time – the simple, paperless assignment workflow allows teachers to create, review and mark assignments quickly, all in one place.
+\n\n • Improves organisation – students can see all of their assignments on an assignments page, and all class materials (e.g. documents, photos and videos) are automatically filed into folders in Google Drive.
+\n\n • Enhances communication – allows teachers to send announcements and start class discussions instantly. Students can share resources with each other or provide answers to questions on the stream.
+\n\n • Secure – unlike other Educational Services, Elite Classroom contains no ads and never uses your content or student data for advertising purposes."/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_submitted"
+        android:title="Submitted"
+        android:icon="@drawable/ic_submitted"/>
+
+    <item android:id="@+id/nav_pending"
+        android:title="Pending"
+        android:icon="@drawable/ic_pending"/>
+
+    <item android:id="@+id/nav_missed"
+        android:title="Missed"
+        android:icon="@drawable/ic_missed"/>
+
+</menu>
