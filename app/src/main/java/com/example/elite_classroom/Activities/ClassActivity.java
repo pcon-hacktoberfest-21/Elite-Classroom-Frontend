@@ -50,7 +50,7 @@ public class ClassActivity extends AppCompatActivity implements NavigationView.O
     public static String classCode, owner_id, class_name, owner_name;
     public static TextView name,top_menu,top_menu_second;
 
-    public ArrayList<Fragment>  fragments = new ArrayList<Fragment>();
+    public ArrayList<Fragment>  fragments = new ArrayList<>();
     StreamFragment streamFragment;
     ClassWorkFragment classWorkFragment;
     PeopleFragment peopleFragment;

@@ -73,7 +73,8 @@ public class Get_Classes_Adapter extends RecyclerView.Adapter<Get_Classes_Adapte
 
          viewHolder.class_name.setText(list1.get(i).getClass_name());
          viewHolder.owner_name.setText(list1.get(i).getOwner_name());
-         viewHolder.students_no.setText(list1.get(i).getNumber_of_participants()+" "+ "students");
+         String avoidWarningOnStudentsNumber = list1.get(i).getNumber_of_participants()+" "+ "students";
+         viewHolder.students_no.setText(avoidWarningOnStudentsNumber);
          viewHolder.parent_layout.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {

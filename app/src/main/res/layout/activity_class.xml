@@ -39,7 +39,8 @@
 
                     android:textSize="25sp"
                     android:textColor="@color/blue_colour"
-                    android:layout_marginRight="50dp" />
+                    android:layout_marginRight="50dp"
+                    tools:ignore="UnusedAttribute" />
 
 <!--                android:fontFamily="@font/rubic_light"-->
 
@@ -63,7 +64,8 @@
                     android:textSize="22sp"
                     android:textColor="@color/black"
                     android:layout_marginRight="50dp"
-                    android:layout_alignParentRight="true" />
+                    android:layout_alignParentRight="true"
+                    tools:ignore="UnusedAttribute" />
 
 
                 <TextView

@@ -78,8 +78,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         action.setDisplayShowTitleEnabled(false);
 
-         navigationView = findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+        navigationView.setItemIconTintList(null);
         navigationView.setCheckedItem(R.id.nav_class);
         drawer = findViewById(R.id.drawer_layout);
         preferences =MainActivity.this.getSharedPreferences(sharedPrefFile, Context.MODE_PRIVATE);
@@ -142,6 +143,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 editor.commit();
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 Toast.makeText(MainActivity.this,"Signed_Out",Toast.LENGTH_LONG).show();
+                finish();
                 startActivity(intent);
                 break;
             }
