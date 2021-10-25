@@ -35,6 +35,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -177,7 +178,8 @@ public class ClassWorkFragment extends Fragment {
                         }
                     }
 
-
+                    Collections.sort(list);
+                    Collections.reverse(list);
                     adapter = new ClassWorkAdapter(list,ctx,token);
                     recyclerView.setAdapter(adapter);
                     if(classwork_refresh.isRefreshing())

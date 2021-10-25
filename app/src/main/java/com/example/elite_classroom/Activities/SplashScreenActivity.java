@@ -5,24 +5,29 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.WindowManager;
 
 import com.example.elite_classroom.R;
 
+import in.codeshuffle.typewriterview.TypeWriterView;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
-
+    private TypeWriterView myText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        // set splash screen in full screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        myText=findViewById(R.id.typeWriterView);
+        myText.setDelay(1);
+        myText.setWithMusic(true);
+        myText.animateText("Elite Classroom");
+
+
 
         // add hander to call postDelayed
         Handler handler = new Handler();
-        handler.postDelayed(this::loadLogin, 2000);
+        handler.postDelayed(this::loadLogin, 3000);
 
 
 

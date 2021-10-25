@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
             else
             {
-                getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,
+                getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.slide_out,R.anim.slide_in).replace(R.id.frame_container,
                         new ClassFragment(),"HOME_FRAGMENT").commit();
                 navigationView.setCheckedItem(R.id.nav_class);
             }

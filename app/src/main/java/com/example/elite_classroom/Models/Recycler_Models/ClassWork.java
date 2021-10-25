@@ -1,6 +1,6 @@
 package com.example.elite_classroom.Models.Recycler_Models;
 
-public class ClassWork {
+public class ClassWork implements Comparable<ClassWork>{
     String work_id;
     String class_code;
     String title;
@@ -104,5 +104,11 @@ public class ClassWork {
     public void setClass_code(String class_code) {
         this.class_code = class_code;
 
+    }
+    //This is comparator for sorting the classwork list in ascending order of date created
+    public int compareTo(ClassWork whomToCompare){
+        if(getCreated_date()==null || whomToCompare.getCreated_date()==null)
+            return 0;
+        return getCreated_date().compareTo(whomToCompare.getCreated_date());
     }
 }

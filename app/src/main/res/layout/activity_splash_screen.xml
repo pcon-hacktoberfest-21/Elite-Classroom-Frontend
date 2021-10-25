@@ -7,13 +7,31 @@
     tools:context=".Activities.SplashScreenActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:layout_margin="20dp"
-        android:src="@drawable/splashscreen"
-        tools:ignore="ContentDescription" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="280dp"
+        android:id="@+id/lottie"
+        android:layout_marginTop="120dp"
+        android:layout_height="210dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/animation_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <in.codeshuffle.typewriterview.TypeWriterView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/typeWriterView"
+        android:padding="8dp"
+        android:text="Elite Classroom"
+        android:textStyle="bold"
+        android:textColor="#1FD326"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottie"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
