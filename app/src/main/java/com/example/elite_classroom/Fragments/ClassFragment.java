@@ -47,11 +47,7 @@ public class ClassFragment extends Fragment {
         buttonAddNote = view.findViewById(R.id.class_bottom);
         recycler_view  = view.findViewById(R.id.recycler_view);
 
-
-             getClasses();
-
-
-
+        getClasses();
 
 
         MainActivity.textView.setText("Elite Classroom");

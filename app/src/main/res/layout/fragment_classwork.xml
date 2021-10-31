@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/classwork_refresh"
@@ -22,7 +23,8 @@
         app:tint="@android:color/white"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_add_second"/>
+        android:src="@drawable/ic_add_second"
+        tools:ignore="ContentDescription,UnusedAttribute" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

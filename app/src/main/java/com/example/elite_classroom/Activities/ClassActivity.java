@@ -50,7 +50,7 @@ public class ClassActivity extends AppCompatActivity implements NavigationView.O
     public static String classCode, owner_id, class_name, owner_name;
     public static TextView name,top_menu,top_menu_second;
 
-    public ArrayList<Fragment>  fragments = new ArrayList<Fragment>();
+    public ArrayList<Fragment>  fragments = new ArrayList<>();
     StreamFragment streamFragment;
     ClassWorkFragment classWorkFragment;
     PeopleFragment peopleFragment;
@@ -304,7 +304,7 @@ public class ClassActivity extends AppCompatActivity implements NavigationView.O
 
     public void show_Stream_Fragment()
     {
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in,R.anim.fade_out);
         if(streamFragment.isAdded())
         {
             fragmentTransaction.show(streamFragment);
@@ -322,7 +322,7 @@ public class ClassActivity extends AppCompatActivity implements NavigationView.O
 
     public void show_ClassWork_Fragment()
     {
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in,R.anim.fade_out);
         if(classWorkFragment.isAdded())
         {
             fragmentTransaction.show(classWorkFragment);
@@ -340,7 +340,7 @@ public class ClassActivity extends AppCompatActivity implements NavigationView.O
 
     public void show_people_Fragment()
     {
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in,R.anim.fade_out);
         if(peopleFragment.isAdded())
         {
             fragmentTransaction.show(peopleFragment);

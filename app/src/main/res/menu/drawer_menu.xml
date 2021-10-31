@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
         <group android:checkableBehavior="single">
             <item
                 android:id="@+id/nav_class"
                 android:title="Classes "
                 
-                android:icon="@drawable/ic_class"/>
+                android:icon="@drawable/ic_class"
+                tools:ignore="HardcodedText" />
             <item
                 android:id="@+id/nav_calender"
                 android:title="Calender"
-                android:icon="@drawable/ic_calender"/>
+                android:icon="@drawable/ic_calender"
+                tools:ignore="HardcodedText" />
         </group>
-        <item android:title="Enrolled">
+        <item android:title="Enrolled"
+            tools:ignore="HardcodedText">
             <menu>
                 <group android:checkableBehavior="single">
                     <item
                         android:id="@+id/nav_todo"
                         android:title="To-Do"
-                        android:icon="@drawable/ic_todo"/>
+                        android:icon="@drawable/ic_todo"
+                        tools:ignore="HardcodedText" />
                 </group>
             </menu>
         </item>
@@ -27,14 +32,17 @@
                 <item
                     android:id="@+id/nav_about"
                     android:title="About"
+                    tools:ignore="HardcodedText"
                     android:icon="@drawable/ic_about"/>
                 <item
                     android:id="@+id/nav_feedback"
                     android:title="Submit Feedback"
+                    tools:ignore="HardcodedText"
                     android:icon="@drawable/ic_feedback"/>
                 <item
                     android:id="@+id/nav_signout"
                     android:title="Log Out"
+                    tools:ignore="HardcodedText"
                     android:icon="@drawable/ic_logout"/>
             </group>
         </menu>

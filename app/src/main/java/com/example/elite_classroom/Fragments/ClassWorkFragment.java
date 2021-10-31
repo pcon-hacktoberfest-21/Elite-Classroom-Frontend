@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.icu.text.UnicodeSetSpanner;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,6 +35,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -176,7 +178,8 @@ public class ClassWorkFragment extends Fragment {
                         }
                     }
 
-
+                    Collections.sort(list);
+                    Collections.reverse(list);
                     adapter = new ClassWorkAdapter(list,ctx,token);
                     recyclerView.setAdapter(adapter);
                     if(classwork_refresh.isRefreshing())
@@ -190,7 +193,7 @@ public class ClassWorkFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                Log.d("####","Kuch error ho gaya "+error);
             }
         });
         requestQueue.add(request);

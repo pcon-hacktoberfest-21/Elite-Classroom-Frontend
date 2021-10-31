@@ -4,6 +4,7 @@ plugins {
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
 }
+def lottieVersion = "3.4.0"
 apply plugin: 'kotlin-android'
 
 android {
@@ -70,6 +71,9 @@ dependencies {
 
 
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'in.codeshuffle:typewriterview:1.1.0'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 
 }
 repositories {

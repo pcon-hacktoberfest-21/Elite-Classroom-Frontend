@@ -158,6 +158,7 @@ googleBTN= findViewById(R.id.googleBTN);
                                 }
                                 else
                                 {
+                                    Log.d("####","Response body null hai ");
                                    Toast.makeText(LoginActivity.this,"Body is null",Toast.LENGTH_LONG).show();
                                 }
 
@@ -173,12 +174,15 @@ googleBTN= findViewById(R.id.googleBTN);
                 });
 
                       }
+                      else{
+                          Log.d("####","Name ya phir Email null hai");
+                      }
 
             }
 
         } catch (ApiException e) {
 
-            Log.d("gogo",e.toString());
+            Log.d("#### ","API Exception ho gayi "+e.toString());
 
         }
 

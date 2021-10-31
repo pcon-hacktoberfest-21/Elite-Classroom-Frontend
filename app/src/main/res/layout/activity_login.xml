@@ -37,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.648"></TextView>
+        app:layout_constraintVertical_bias="0.648"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView"
@@ -52,7 +53,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.408"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView2"
@@ -69,7 +71,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.508"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView3"
@@ -84,7 +87,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+        app:layout_constraintVertical_bias="0.958"
+        tools:ignore="HardcodedText" />
 
 
 
@@ -100,7 +104,8 @@
             android:id="@+id/progress_bar"
             android:layout_centerInParent="true"
             android:indeterminateTint="@color/white"
-            android:layout_height="40dp">
+            android:layout_height="40dp"
+            tools:ignore="UnusedAttribute">
 
         </ProgressBar>
 
